@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div><a href="">logo</a></div>
+        <nav>
+            <ul class="menu">
+                <li><a class="menu__link menu__link_active" href="../index.html">Главная</a></li>
+                <Li><a class="menu__link" href="">Контакты</a></Li>
+                <Li><a class="menu__link" href="../store/store.html">Магазин</a></Li>
+            </ul>
+        </nav>
+        <form class="form-search" action="">
+            <input class=" form-search__search " type="search" name="search" placeholder="Поиск">
+            <input type="image" src="../images/search.png" >
+        </form>
+    </header>
+    <div class="container">  
+    
+        <form action="" class="form-contact">
+            <p class="form-contact__data">
+
+                <input type="text" name="user_name" placeholder="Вaше имя" required >
+                <input type="email" name="user_email" placeholder="Ваш email"  required>
+                <input type="number" name="user_age" placeholder="Ваш возраст" min="6" max="100">
+                <input type="password" name="user_password" placeholder="Ваш пароль" required>
+            </p>
+            <p>
+                <b>Ваш любимый цвет автомобиля</b>
+                <br>
+                <br>
+                <input type="color" name="car_color" >
+            </p>
+            <p>
+                <b>Дата выпуска</b>
+                <br>
+                <br>
+                <input type="date" name="car_date" >
+            </p>
+            <p>
+                <b>Фото автомобиля</b>
+                <br>
+                <br>
+                <input type="file" name="foto">
+            </p>
+            <p>
+                <b>Выберите вашу любимую марку машины</b>
+                <br>
+                <br>
+                <label for="mersedec">Mersedec</label> 
+                <input type="checkbox" name="car" id="mersedec" value="mersedec ">
+                <label for="hunday">Hunday</label>
+                <input type="checkbox" name="car" id="hunday" value="hunday">
+                <label for="nissan">Nissan</label>
+                <input type="checkbox" name="car" id="nissan" value="nissan ">
+            </p>
+             <p>
+                <b>Выберите тип кузова</b>
+                <br>
+                <br>
+                <label for="sedan">Sedan</label>
+                <input type="radio"  name="car_type" id="sedan "  value="sedan">
+                <label for="universal">Universal</label>
+                <input type="radio"  name="car_type" id="universal" value="universal" >
+                <label for="crossover">Crossover</label>
+                <input type="radio" name="car_type" id="crossover" value="crossover">
+            </p>
+              
+            <p >
+                
+                <textarea name="comments" class="form-contact__comments" placeholder="Напишите нам комментарий "></textarea>
+            </p>
+            <p>
+                <button type="reset" class="btn btn-danger" >Сбросить</button>
+                <button type="submit" class="btn btn-succes" >Отправить</button>
+            </p> 
+        </form>
+    </div>
+    <footer class="footer">
+        <p class="foooter__text">номер телефона в контактах</p>
+    </footer>
+    
+</body>
+</html>
